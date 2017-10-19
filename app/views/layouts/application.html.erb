@@ -10,10 +10,10 @@
 
   <body>
   	<% flash.each do |key, message| %> 
-		<div class="text-center alert alert-<%= key == 'notice'? 'success': 'danger' %>">
-		<%= message %> 
-		</div>
-	<% end %>
+  		<div class="text-center alert alert-<%= key == 'notice'? 'success': 'danger' %>">
+  		<%= message %> 
+  		</div>
+  	  <% end %>
     <%= yield %>
   </body>
 </html>
